@@ -18,3 +18,15 @@ The observer pattern provides an object design, where subjects and observers are
 - Changes to either the subject or an observer will not affect the other.
   
 Now lets look at the 2 different types of observer patterns:  
+
+- **Push Method**
+    * Here what happens is that, when the state of Subject changes, it sends its complete state in the notification to the observers.
+- **Pull Method**
+    * Pull method works differently, the difference is that it only notifies the observers that the state of Subject has been changed. So its upto the Observer to get the updated state from the Subject.
+        * This has positives like:
+            1. Suppose an observer only wants a particular part of the state of the Subject and is not interested in the whole state. So it fetches what it needs.
+            2. Suppose Observer is busy in a task, and it doesnt want to start processing the changed state of the Subject. So here the Observer can do that later.
+        * A negative that I can think of is:
+            1. Its upto the observer to ask for the state, so there might be a case that when observer asks for a state the state of Object might have been altered, but the observer was not notified of that change because it has already unregistered from Subject, so you should always check if Observer is registered before fetching a state.
+  
+> Note: The pull method that we implement here is provided by JAVA itself and is used in JDK also. This native implementation is good, but it has a down side that it doesnot follow the design principal "program to an interface not a an implementation". So basically we have to extend the Observable class. If you want to overcome this issue, you would have to implement it on your own. It wouldnt be that difficult, you already have your push implementation. It would just need few modifications
