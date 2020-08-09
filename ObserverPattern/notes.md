@@ -21,6 +21,9 @@ Now lets look at the 2 different types of observer patterns:
 
 - **Push Method**
     * Here what happens is that, when the state of Subject changes, it sends its complete state in the notification to the observers.
+  
+    * Class Diagram below:
+    ![UML diagram of push observer pattern to be shown here](push.jpg)
 - **Pull Method**
     * Pull method works differently, the difference is that it only notifies the observers that the state of Subject has been changed. So its upto the Observer to get the updated state from the Subject.
         * This has positives like:
@@ -29,4 +32,11 @@ Now lets look at the 2 different types of observer patterns:
         * A negative that I can think of is:
             1. Its upto the observer to ask for the state, so there might be a case that when observer asks for a state the state of Object might have been altered, but the observer was not notified of that change because it has already unregistered from Subject, so you should always check if Observer is registered before fetching a state.
   
+    * Class Diagram below:
+    ![UML diagram of push observer pattern to be shown here](pull.jpg)
+  
 > Note: The pull method that we implement here is provided by JAVA itself and is used in JDK also. This native implementation is good, but it has a down side that it doesnot follow the design principal "program to an interface not a an implementation". So basically we have to extend the Observable class. If you want to overcome this issue, you would have to implement it on your own. It wouldnt be that difficult, you already have your push implementation. It would just need few modifications
+  
+**If you are familiar with javascript, you will now understand how addEventListener uses Observer Pattern to perform the task**
+
+> Note: At the time of writing this, JAVA has depreciated the *Observable* class and *Observer* interface. You can refer to [this](https://stackoverflow.com/questions/46380073/observer-is-deprecated-in-java-9-what-should-we-use-instead-of-it#:~:text=Ans%3A%20The%20Observable%20class%20and,for%2Done%20correspondence%20with%20notifications.) Stack overflow question for better understanding.
