@@ -11,3 +11,4 @@
 
 ## Below are the implemented design patterns
 - [Strategy Pattern](StrategyPattern)
+- [Observer Pattern](ObserverPattern)
