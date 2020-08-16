@@ -9,8 +9,11 @@
     - Helps in changing behaviour during runtime
 - Strive for loosely coupled designs between objects that interact
     - Loosely coupled designs allow us to build flexible Object Oriented (OO) systems that can handle change because they minimize the interdependency between objects.
+- Classes should be open for extension, but closed for modification.
+    - Our goal should be to allow classes extend easily so as to incorporate any new behavior, without modifying the existing code. It is also called the open-closed principle. *`Be careful when choosing the areas of code that need to be extended; applying the open-closed principle "everywhere" is wasteful and unnecessary, and can lead to complex, hard-to-understand code.`*
 
 
 ## Below are the implemented design patterns
 - [Strategy Pattern](StrategyPattern)
 - [Observer Pattern](ObserverPattern)
+- [Decorator Pattern](DecoratorPattern)
