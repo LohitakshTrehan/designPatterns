@@ -17,4 +17,4 @@ Here below you can see the class diagram of Beverage Example:
   
 ![Beverage class example diagram shown here](beverage.jpeg)
   
-> Note: **Decorator Pattern** *does specify an abstract component, but in JAVA, obviously, we can use an interface*. So its your decision.
+> <span style="color: darkblue;">Note: **Decorator Pattern** *does specify an abstract component, but in JAVA, obviously, we can use an interface*. So its your decision.</span>
