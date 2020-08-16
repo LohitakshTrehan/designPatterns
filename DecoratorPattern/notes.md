@@ -22,3 +22,11 @@ Here below you can see the class diagram of Beverage Example:
 - but in JAVA, obviously, we can use an interface.
 - So its your decision.
 ```
+  
+Java I/O also heavily uses decorator pattern. You will be able to understand it better using the image below:
+  
+![Java I/O Class diagram to be shown here](javaio.jpeg)
+  
+In our JAVA example we are introducing a new Decorator, which converts a stream of characters in lower case.
+
+### Java I/O also points out one of the *downsides* of the Decorator Pattern: `Designs using this pattern often results in a large number of small classes that can become overwhelming for some developers and can increase the chance of introduction of errors.` However, decorators are typically created by using other patterns like Factory and Builder. Once we cover those patterns we will see that the creation of the concrete component with its decorator is "well encapsulated" and doesn't lead to these kinds of problems.
