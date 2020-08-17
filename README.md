@@ -14,7 +14,7 @@
 
 
 ## Below are the implemented design patterns
-- [Strategy Pattern](StrategyPattern)
-- [Observer Pattern](ObserverPattern)
-- [Decorator Pattern](DecoratorPattern)
-- [Factory Pattern](FactoryPattern)
+- [Strategy Pattern](StrategyPattern/notes.md)
+- [Observer Pattern](ObserverPattern/notes.md)
+- [Decorator Pattern](DecoratorPattern/notes.md)
+- [Factory Pattern](FactoryPattern/notes.md)
