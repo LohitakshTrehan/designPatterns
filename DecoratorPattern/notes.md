@@ -1,5 +1,7 @@
 # Decorator Pattern
   
+[Go Back](../notes.md)
+  
 ### **The Decorator Pattern** attaches additional responsibilities to an object dynamically. Decorators provides a flexible alternative to subclassing for extending functionality.
   
 Key points:
