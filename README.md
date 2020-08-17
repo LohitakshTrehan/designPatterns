@@ -17,3 +17,4 @@
 - [Strategy Pattern](StrategyPattern)
 - [Observer Pattern](ObserverPattern)
 - [Decorator Pattern](DecoratorPattern)
+- [Factory Pattern](FactoryPattern)
