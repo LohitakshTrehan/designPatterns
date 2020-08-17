@@ -1,6 +1,6 @@
 # Factory Pattern
   
-[Go Back](../notes.md)
+[Go Back](../README.md)
   
 ### Defination here
   
